@@ -4,11 +4,12 @@
   "private": true,
   "engines": {
     "node": "0.8.x",
-    "npm":  "1.1.x"
+    "npm": "1.1.x"
   },
   "dependencies": {
     "zappajs": "~0.4.12",
     "xml2object": "~0.1.0",
-    "request": "~2.11.4"
+    "request": "~2.11.4",
+    "coffee-script": "~1.4.0"
   }
 }
