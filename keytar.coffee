@@ -22,7 +22,7 @@ keytar = require("zappajs").app ->
     parser.on "object", (name, obj) =>
       @send obj
 
-    metarUrl = util.format METAR_URL, @params.station
+    metarUrl = util.format METAR_API_URL, @params.station
     request.get(metarUrl).pipe(parser.saxStream)
 
 keytar.app.listen Number(process.env.PORT || 3000)
