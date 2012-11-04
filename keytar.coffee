@@ -12,7 +12,7 @@ keytar = require("zappajs").app ->
     html ->
       body ->
         h1 -> "METAR"
-        p -> "Visit /metar/:station_id to retrieve METAR as JSON"
+        p -> "Visit /metar/:station to retrieve METAR as JSON"
 
   @get "/": ->
     @render "index"
@@ -20,7 +20,7 @@ keytar = require("zappajs").app ->
   @get "/metar/:station": ->
     parser = new xml2object ["METAR"]
     parser.on "object", (name, obj) =>
-      @send obj
+      @jsonp obj
 
     metarUrl = util.format METAR_API_URL, @params.station
     request.get(metarUrl).pipe(parser.saxStream)
