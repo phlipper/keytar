@@ -1,0 +1,14 @@
+{
+  "name": "keytar",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "0.6.x",
+    "npm":  "1.0.x"
+  },
+  "dependencies": {
+    "zappajs": "~0.4.12",
+    "xml2object": "~0.1.0",
+    "request": "~2.11.4"
+  }
+}
