@@ -12,7 +12,8 @@ keytar = require("zappajs").app ->
     html ->
       body ->
         h1 -> "METAR"
-        p -> "Visit /metar/:station to retrieve METAR as JSON"
+        p -> "Visit <code>/metar/:station</code> to retrieve METAR as JSON"
+        p -> """Example: <a href="/metar/KTRK">KTRK</a>"""
 
   @get "/": ->
     @render "index"
