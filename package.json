@@ -1,6 +1,6 @@
 {
   "name": "keytar",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "engines": {
     "node": "0.8.x",
@@ -11,5 +11,9 @@
     "xml2object": "~0.1.0",
     "request": "~2.11.4",
     "coffee-script": "~1.4.0"
+  },
+  "subdomain": "keytar-node",
+  "scripts": {
+    "start": "coffee keytar.coffee"
   }
 }
